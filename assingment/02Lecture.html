@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <script>
+        // Task 1: Declare and Log
+
+        // var a = "kavy";
+        // let b = 10;
+        // const c = true;
+
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+
+        //Task 2: Reassignment Check
+
+        // let b = 10;
+        // const c = 15;
+
+        // b = 20;
+        // c = 20;
+
+        // console.log(b);
+        // console.log(c);
+
+        //Task 3: Block Scope Test
+
+        // if (true) {
+        //     var a = "kavy";
+        //     let b = 10;
+        //     const c = true;
+        // }
+
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+
+        //Task 4: Redeclaration Experiment
+
+        // var a = "kavy";
+        // let b = 19;
+
+        // var a = "kavy";
+        // let b = 19;
+
+        // console.log(a);
+        // console.log(b);
+
+        //let can not be Redeclar
+
+        // Task 5: Hoisting Observation
+
+        // console.log(a);
+        // var a = "kavy";
+
+        // console.log(b);
+        // let b = 19;
+
+        //var gives undefined
+        //let gives error
+
+        // Task 6: Const Object Mutation
+
+        // const a = {
+        //     name: "kavy",
+        //     age: 19,
+        // }
+        // a.age = 20;
+
+        // console.log(a);
+
+        // Task 7: Loop Counter Bug
+
+        // for (let i = 0; i < 5; i++) {
+        //     setTimeout(() => {
+        //         console.log(i);
+        //     }, 1000);
+        // }
+
+        //Task 8: TDZ Error Investigation
+
+        // {
+        //     console.log(a);
+        //     let a = 5;
+        // }
+
+        // {
+        //     let a = 5;
+        //     console.log(a);
+        // }
+
+        // Task 9: Function Scope vs Block Scope
+
+        // function testScope() {
+        //     console.log("Function start");
+
+        //     if (true) {
+        //         var a = "hallo";
+        //         let b = "JavaScript";
+
+        //         // console.log(a);
+        //         // console.log(b);   //both runs
+        //     }
+
+        //     // console.log(a);   //a ruuns pecefull
+        //     // console.log(b);   //b is not defined
+        // }
+
+        // testScope();
+
+        // console.log(a);   //a is not defined
+
+
+        // Task 10: Const Configuration Object
+
+        // const config = {
+        //     apiUrl: "https://api.example.com",
+        //     timeout: 5000
+        // };
+
+        // config.timeout = 10000;  
+        // console.log(config);
+
+        // Task 11: Variable Shadowing
+        let count = 5;
+
+        {
+            let count = 10;
+            console.log(count); 
+        }
+
+        console.log(count);  
+
+        // Task 12: Replace var with let/const
+
+        // let total = 0;
+        // for (let i = 0; i < 5; i++) {
+        //     total += i;
+        // }
+
+        // Task 13: Counter Logic
+        // Build a counter that increments correctly using the appropriate variable type.
+
+        // Focus: Choosing let vs const
+        // let counter = 0;
+
+        // function increment() {
+        //     counter++;
+        //     console.log(counter);
+        // }
+
+        // Task 14: Prevent Accidental Reassignment
+        // const TAX_RATE = 0.2;
+        // console.log(TAX_RATE);
+
+
+        // Task 15: App Initialization Variables
+        // Create an app initialization script with:
+
+
+    </script>
+</body>
+
+</html>
+
+</script>
+</body>
+
+</html>
