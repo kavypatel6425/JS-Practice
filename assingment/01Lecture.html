@@ -36,7 +36,7 @@
         // console.log("Three");
 
         //java-script run code line by line  unless settimeout , promises ,async
-        // so the output matches the top to bottom execution order 
+        // so the output matches the top to bottom execution order
 
         //4. Blocking Script Experiment
 
@@ -74,13 +74,96 @@
         //     console.log("Task finish");
         // });
 
+
         // 8. Non-Blocking Refactor
+        // Task
+
+        // document.getElementById("betterBtn").addEventListener("click", () => {
+
+        //     let i = 0;
+        //     const limit = 5000000000;
+
+        //     function hello() {
+        //         let helloSize = 1000000;
+
+        //         for (let j = 0; j < helloSize && i < limit; j++) {
+        //             i++;
+        //         }
+
+        //         if (i < limit) {
+        //             setTimeout(hello, 0);
+        //         } else {
+        //             console.log("Finished without freezing!");
+        //         }
+        //     }
+
+        //     hello();
+        // });
+
+
+
 
         // 9. Script Execution Timeline
+        // Task
+        // DEVTOOLS
 
         // 10. Execution Debugging
+        // Task
+        // setTimeout(() => {
+        //     let data = "Loaded!";
+        //     console.log(data);
+        // }, 1000);
 
-        
+
+
+        // Advanced Intermediate (Project-Ready)
+        // 11. Predict Execution Without Running
+        // Task
+        // console.log("A");
+
+        // setTimeout(() => console.log("B"), 0);
+        // console.log("C");
+        // setTimeout(() => console.log("D"),2000)
+
+
+        // 12. Refactor Blocking Code
+        // Task
+        // function Task(total) {
+        //     let i = 2;
+
+        //     function run() {
+        //         let end = Math.min(i + 10000, total);
+
+        //         for (; i < end; i++) {}
+
+        //         if (i < total) {
+        //             setTimeout(run, 2);
+        //         }
+        //     }
+
+        //     run();
+        // }
+        // Task();
+
+
+        // Break a long task into smaller execution chunks.
+        // Goal:
+        // Improve responsiveness.
+
+        // 13. Script Load Optimization
+        // Task
+
+
+
+        // 14. Event-Driven Execution
+        // Task
+        // window.addEventListener("load", () => {
+        //     console.log("Page loaded");
+        // });
+
+
+
+
     </script>
 </body>
 
