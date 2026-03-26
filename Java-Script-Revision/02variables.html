@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h2 id="show"></h2>
+    <button onclick="incriment()">+</button>
+    <button onclick="decriment()">-</button>
+    <script>
+
+        // Task 1: Declare and Log
+
+        // var name = "Kavy";
+        // let age = 19;
+        // const Rollno = 7;
+        // console.log(name);
+        // console.log(age);
+        // console.log(Rollno);
+
+        // Task 2: Reassignment Check
+
+        // let age = 19;     //Reassignment allow
+        // age = 20
+        // console.log(age);
+
+        // const Rollno = 7;   //Reassignment not allow
+        // Rollno = 13;
+        // console.log(Rollno);
+
+        // Task 3: Block Scope Test
+
+        // var isLogin = true;
+
+        // if (isLogin) {
+        //     var name = "Kavy";
+        //     let age = 19;
+        //     const Rollno = 7;
+        // }
+
+        // console.log(name);          //Output = Kavy
+        // console.log(age);           //age is not defined
+        // console.log(Rollno);        //Rollno is not defined
+
+        // Task 4: Redeclaration Experiment
+
+        // var name = "Kavy";
+        // var name = "Kavy";
+        // console.log(name);      //Redeclaration  Allowed
+
+        // let age = 19;
+        // let age = 19;
+        // console.log(age);       //Redeclaration not Allowed
+
+        // Task 5: Hoisting Observation
+
+        // console.log(name);
+        // var name = "Kavy";
+
+        // console.log(age);
+        // let age = 19
+
+        // Task 6: Const Object Mutation
+
+        // const student = {
+        //     name: "Kavy",
+        //     age : 19,
+        //     Rollno: 7
+        // }
+
+        // student.age= 20;
+
+        // console.log(student);
+
+        // Task 7: Loop Counter Bug
+
+        // for (let i = 0; i <= 3; i++) {
+        //     setTimeout(() => {
+        //         console.log(i);
+
+        //     }, 1000);
+        // }
+
+        // Task 8: TDZ (Temporal Dead Zone) Error
+
+        // let a = 10;
+        // console.log(a); // Error
+
+        // Task 9: Function Scope vs Block Scope
+
+        // function abc() {
+
+        //     if (isLogin) {
+        //         var x = 10;
+        //         let y = 20;
+
+        //         console.log("Inside:", x); // 10
+        //         console.log("Inside:", y); // 20
+        //     }
+
+        //     console.log("Outside :", x); // 10
+        //     console.log("Outside :", y); // Error
+        // }
+
+        // abc();
+
+
+        // Task 10: Const Configuration Object
+
+        // const config = {
+        //     app: "MyApp",
+        //     version: "1.0",
+        // };
+
+        // config.app = "MyApp1";
+        // config.version = "1.1";
+
+        // console.log(config);
+
+        // Task 11: Variable Shadowing
+        // {let name = "Kavy";
+
+        // {
+        //     let name = "Het";
+        //     console.log(name);
+        // }
+
+        // console.log(name)}
+
+
+        // ✅ Task 13: Counter Logic
+
+        let count = 0
+        function incriment() {
+            count++;
+            document.getElementById("show").innerHTML = count;
+        }
+        function decriment() {
+            count--;
+            document.getElementById("show").innerHTML = count;
+        }
+    </script>
+</body>
+
+</html>
