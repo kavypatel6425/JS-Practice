@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Task 1: Create & Log Strings
+
+        let str = "Hello World";
+
+        console.log("String:", str);
+        console.log("Length:", str.length);
+        console.log("First Character:", str[0]);
+        console.log("Last Character:", str[str.length - 1]);
+
+        // Task 2: Case Conversion
+
+        let text = "JavaScript";
+
+        let upper = text.toUpperCase();
+        let lower = text.toLowerCase();
+
+        console.log("Uppercase:", upper);
+        console.log("Lowercase:", lower);
+        console.log("Original:", text); // remains unchanged
+
+        // Task 3: Trimming Whitespace
+
+        let spaced = "   Hello JS   ";
+
+        let trimmed = spaced.trim();
+
+        console.log("Before:", spaced);
+        console.log("After:", trimmed);
+
+        // Task 4: Character Access
+
+        let word = "Coding";
+
+        console.log(word[0]); // C
+        console.log(word[2]); // d
+        console.log(word[5]); // g
+
+        // Task 5: String Concatenation
+
+        let first = "Hello";
+        let second = "World";
+
+        // Using +
+        console.log(first + " " + second);
+
+        // Using template literals
+        console.log(`${first} ${second}`);
+
+        // Task 6: Check Substring
+
+        let sentence = "JavaScript is awesome";
+
+        console.log(sentence.includes("awesome")); // true
+        console.log(sentence.includes("python"));  // false
+
+        // Task 7: Email Normalization
+
+        let email = "   TEST@Example.COM   ";
+
+        let normalizedEmail = email.trim().toLowerCase();
+
+        console.log(normalizedEmail);
+
+        // Task 8: Extract Username
+
+
+
+        // Task 9: Replace Text
+
+        let msg = "I love Java";
+
+        let updated = msg.replace("Java", "JavaScript");
+
+        console.log(updated);
+
+        // Task 10: Split & Count Words
+
+        let sentence2 = "JavaScript is very powerful";
+
+        let words = sentence2.split(" ");
+        console.log(words);
+        console.log("Word count:", words.length);
+
+
+        //Task 11: Case - Insensitive Search
+        function searchIgnoreCase(text, word) {
+            return text.toLowerCase().includes(word.toLowerCase());
+        }
+
+        console.log(searchIgnoreCase("Hello World", "hello")); // true
+        console.log(searchIgnoreCase("JavaScript", "SCRIPT")); // true
+
+
+        //Task 12: URL Parsing
+
+        let url = "https://example.com/products/shoes";
+
+        let parts = url.split("/");
+        let lastSegment = parts[parts.length - 1];
+
+        console.log(lastSegment); // shoes
+
+
+        //Task 13: Mask Sensitive Data
+
+        l
+
+        // Task 14: Reverse a String
+
+
+        let original = "hello";
+
+        let reversed = original.split("").reverse().join("");
+
+        console.log(reversed);
+    </script>
+</body>
+
+</html>

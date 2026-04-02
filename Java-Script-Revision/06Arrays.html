@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        // Task 1: Create Your First Array
+
+        let arr1 = [10, 20, 30, 40, 50];
+        console.log(arr1);
+
+        // Task 2: Empty Array Initialization
+
+        let arr2 = [];
+        arr1.push(1, 2, 3)
+        console.log(arr2);
+
+        // Task 3: Access by Index
+
+        let arr3 = ["Apple", "Banana", "WaterMelone", "Orenge", "Kiwi"]
+        console.log(arr3[2]);
+
+        // Task 4: Array Length
+
+        let arr4 = ["Apple", "Banana", "WaterMelone", "Orenge"];
+        console.log(arr4);
+        console.log(arr4.length);
+        arr3.push("Kiwi")
+        console.log(arr4);
+        console.log(arr4.length);
+
+        // Task 5: Mixed-Type Array
+
+        let arr5 = ["Kavy", 19, true]
+        console.log(arr5);
+
+        // Task 6: Constructor Pitfall
+
+        let arr6 = new Array(5)
+        console.log(arr6);   //(5)[empty × 5]
+
+        // Task 7: Array with Default Values
+
+        let arr7 = new Array(5).fill(0);
+        console.log(arr7);
+
+        // Task 8: Programmatic Array Creation
+
+        let arr8 = [];
+
+        for (let i = 1; i <= 10; i++) {
+            arr8.push(i)
+        }
+
+        console.log(arr8);
+
+        // Task 9: Create Array from String
+
+        let str = "PatelKavy"
+        let arr9 = Array.from(str)
+        console.log(arr9);
+
+        // Task 10: Sparse Array Creation
+
+        let arr = [];
+        arr[5] = "x";
+
+        console.log(arr);               //(6) [empty × 5, 'x']
+        console.log(arr.length);        // 6
+
+        // Task 11: Pre-Allocated Array
+
+        let arr11 = new Array(5);
+
+        for (let i = 0; i < arr11.length; i++) {
+            arr11[i] = i + 1;
+        }
+
+        console.log(arr11);
+
+        // Task 12: Clone an Array
+
+        let original = [1, 2, 3];
+        let copy = [...original];
+
+        console.log(copy);
+
+        // Task 13: Dynamic Data Collection
+
+        let arr13 = [];
+
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 === 0) {
+                arr13.push(i)
+            }
+            
+        }
+        console.log(arr13);
+
+        // Task 14: Length Manipulation
+
+        let arr14 = [1,2,3,4,5,6]
+        console.log(arr14);
+        console.log(arr14.length);
+        
+        arr14.push(7)
+        console.log(arr14);
+        console.log(arr14.length);
+        
+
+
+    </script>
+</body>
+
+</html>
