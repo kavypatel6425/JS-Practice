@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Task 1: Simple Condition
+
+        let num = 5;
+
+        if (num > 0) {
+            console.log("The number is positive");
+        }
+
+        // Task 2: If–Else (Even or Odd)
+
+        let num1 = 4;
+
+        if (num % 2 === 0) {
+            console.log("Even number");
+        } else {
+            console.log("Odd number");
+        }
+
+        // Task 3: Age Verification
+
+        let age = 20;
+
+        if (age >= 18) {
+            console.log("Eligible to vote");
+        } else {
+            console.log("Not eligible to vote");
+        }
+
+        // Task 4: Boolean Check
+
+        let isLoggedIn = true;
+
+        if (isLoggedIn) {
+            console.log("User is logged in");
+        }
+
+        // Task 5: Falsy Values
+
+        let username = "";
+        // let username = undefined; 
+        // let username = null; 
+
+        if (username) {
+            console.log("Username exists");
+        }
+
+        // Task 6: Single-Line Condition
+
+        let num3 = 10;
+
+        if (num > 5) {
+            console.log("Number is greater than 5")
+        };
+
+        // Task 7: Grade Calculator
+
+        let score = 85;
+
+        if (score >= 90) {
+            console.log("Grade A");
+        } else if (score >= 75) {
+            console.log("Grade B");
+        } else if (score >= 50) {
+            console.log("Grade C");
+        } else {
+            console.log("Grade F");
+        }
+
+        // Task 8: Login Validation
+
+        let UserName = "kavy";
+        let email = "";
+
+        if (UserName == "") {
+            console.log("Enter Your UserName");
+
+        } else if (email == "") {
+
+            console.log("Enter Your Email");
+        }
+
+        // Task 11: API Status Handling
+
+        let status = 404;
+
+        if (status === 200) {
+            console.log("Success");
+        } else if (status === 404) {
+            console.log("Not Found");
+        } else if (status === 500) {
+            console.log("Server Error");
+        } else {
+            console.log("Unknown status");
+        }
+
+        // Task 12: Debug Assignment Bug
+
+        let age1 = "20";
+
+        if (age1 === 20) {
+            console.log("Your is now 20 ");
+
+        } else {
+            console.log("Incorrect age");
+
+        }
+        // Task 13: Truthy vs Falsy Debugging
+
+
+
+        // Task 14: Nested Conditions
+
+        // let isLoggedIn1 = true;
+        // let isAdmin = true;
+
+        // if (isLoggedIn1) {
+        //     if (isAdmin) {
+        //         console.log("Access granted");
+        //     }
+        // }
+
+        let isLoggedIn1 = true;
+        let isAdmin = true;
+
+        if (isLoggedIn1 && isAdmin) {
+            console.log("Access granted");
+        }
+    </script>
+</body>
+
+</html>
